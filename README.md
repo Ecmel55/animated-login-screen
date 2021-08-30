@@ -2,4 +2,4 @@
 
 Awesome animeted login screen with HTML + CSS + Javascript.
 
-![](https://www.hizliresim.com/jp5ey5z)
+![](https://i.hizliresim.com/jp5ey5z.png)
