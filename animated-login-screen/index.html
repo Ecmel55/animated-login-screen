@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Animeted Login Screen</title>
+</head>
+<body>
+    <form action="index.html" class="login-form">
+        <h1>Login</h1>
+
+        <div class="txtb">
+            <input type="text">
+            <span data-placeholder="Username"></span>
+        </div>
+
+        <div class="txtb">
+            <input type="password">
+            <span data-placeholder="Password"></span>
+        </div>
+
+        <div class="forgot">
+            <span><a href="#" >Forgot Password?</a></span>
+        </div>
+
+        <div class="remember">
+            <input type="checkbox">
+            <span>Remember me</span>
+        </div>
+
+        <input type="submit" class="logbtn" value="Login">
+
+        <div class="bottom-text">
+            Don't have account? <a href="#">Sign Up</a>
+        </div>
+    </form>
+    
+    <script type="text/javascript">
+        $(".txtb input").on("focus", function(){
+            $(this).addClass("focus");
+        });
+
+        $(".txtb input").on("blur",function(){
+            if($(this).val() == "")
+            $(this).removeClass("focus");
+        });
+
+    </script>
+
+</body>
+</html>
